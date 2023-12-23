@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>File Share(sender)</title>
+	 <link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+	<div class="icon"><a href="index.html" target="_blank">
+    <div class="icon__home">
+      <i class="ion-plus-round"></i>
+    </div></a></div>
+	<div class="app">
+		<div class="screen join-screen active">
+			<div class="form">
+				<h1> share your file</h1>
+				<div class="form-input">
+					<button id="sender-start-con-btn">create a room</button>
+				</div>
+				<div class="form-input" id="join-id">
+					
+				</div>
+			</div>
+		</div>
+		<div class="screen fs-screen">
+			<div class="room_id"></div>
+			<div class="file-input">
+				<label for="file-input">
+					click here to select the file 
+				</label>
+				<input type="file" id="file-input" multiple>
+			</div>
+			<div class="files-list">
+				<div class="title">Shared files:</div>
+				
+			</div>
+		</div>
+	</div>
+
+
+<script src="https://cdn.socket.io/4.3.2/socket.io.min.js"></script>
+<script type="text/javascript" src="code.js"></script>
+</body>
+</html>
